@@ -1,4 +1,4 @@
-FROM josemrb/debian:9.5-base-20180927
+FROM josemrb/debian:9.5-base-20181102
 LABEL maintainer="Jose Miguel Rivero Bruno <work@josemrb.com>"
 
 RUN \

@@ -29,14 +29,13 @@ ENV \
 RUN apt-get install -qq --no-install-recommends \
       curl \
       git \
+      gnupg dirmngr \
       less \
       lsof \
-      procps \
-      psmisc \
+      procps psmisc \
       sudo \
       vim-tiny \
       unzip && \
       ln -s /usr/bin/vim.tiny /usr/bin/vim
 
 SHELL ["/bin/bash", "-c"]
-ENTRYPOINT ["/bin/bash"]

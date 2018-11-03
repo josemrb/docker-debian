@@ -1,4 +1,4 @@
-FROM josemrb/build-asdf:20180927
+FROM josemrb/build-asdf:0.6.0-20181102
 LABEL maintainer="Jose Miguel Rivero Bruno <work@josemrb.com>"
 
 RUN asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
