@@ -1,13 +1,13 @@
-FROM josemrb/build-asdf:0.6.0-20181102
+FROM josemrb/build-asdf:0.7.0-20190228
 LABEL maintainer="Jose Miguel Rivero Bruno <work@josemrb.com>"
 
-RUN asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-ARG ERLANG_VERSION=21.1.1
+RUN asdf plugin-add erlang
+ARG ERLANG_VERSION=21.3.2
 RUN asdf install erlang $ERLANG_VERSION
 RUN asdf global erlang $ERLANG_VERSION
 
-RUN asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-ARG ELIXIR_VERSION=1.7.4-otp-21
+RUN asdf plugin-add elixir
+ARG ELIXIR_VERSION=1.8.1-otp-21
 RUN asdf install elixir $ELIXIR_VERSION
 RUN asdf global elixir $ELIXIR_VERSION
 
