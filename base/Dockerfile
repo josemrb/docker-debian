@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-20190228
 LABEL maintainer="Jose Miguel Rivero Bruno <work@josemrb.com>"
 
 ENV \
@@ -34,8 +34,6 @@ RUN apt-get install -qq --no-install-recommends \
       lsof \
       procps psmisc \
       sudo \
-      vim-tiny \
-      unzip && \
-      ln -s /usr/bin/vim.tiny /usr/bin/vim
+      unzip
 
 SHELL ["/bin/bash", "-c"]
