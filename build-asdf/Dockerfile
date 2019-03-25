@@ -1,4 +1,4 @@
-FROM josemrb/debian:9.5-base-20181102
+FROM josemrb/debian:stretch-20190228
 LABEL maintainer="Jose Miguel Rivero Bruno <work@josemrb.com>"
 
 RUN \
@@ -25,4 +25,4 @@ ENV \
   ASDF_SHIMS=/build/.asdf/shims
 ENV PATH=$ASDF_SHIMS:$ASDF_BIN:$PATH
 
-RUN git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR --branch v0.6.0
+RUN git clone https://github.com/asdf-vm/asdf.git $ASDF_DIR --branch v0.7.0
